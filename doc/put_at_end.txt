@@ -1,0 +1,29 @@
+put_at_end.put({c})                                             *put_at_end.put*
+     Puts 'c' at the end of the current line
+     If the line has a comment it will be put before the comment.
+
+    Parameters: ~
+        {c}  (string)
+
+
+put_at_end.put_semicolon()                            *put_at_end.put_semicolon*
+     Puts ';' at the end of the current line
+     If the line has a comment it will be put before the comment.
+
+
+put_at_end.put_period()                                  *put_at_end.put_period*
+     Puts ',' at the end of the current line
+     If the line has a comment it will be put before the comment.
+
+
+put_at_end.put_comma()                                    *put_at_end.put_comma*
+     Puts '.' at the end of the current line
+     If the line has a comment it will be put before the comment.
+
+
+put_at_end.put_questionmark()                      *put_at_end.put_questionmark*
+     Puts '?' at the end of the current line
+     If the line has a comment it will be put before the comment.
+
+
+vim:tw=78:ts=8:noet:ft=help:norl:
