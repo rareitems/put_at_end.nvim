@@ -48,16 +48,16 @@ put_at_end.put_semicolon = function()
   f(";")
 end
 
---- Puts ',' at the end of the current line
---- If the line has a comment it will be put before the comment.
-put_at_end.put_period = function()
-  f(",")
-end
-
 --- Puts '.' at the end of the current line
 --- If the line has a comment it will be put before the comment.
-put_at_end.put_comma = function()
+put_at_end.put_period = function()
   f(".")
+end
+
+--- Puts ',' at the end of the current line
+--- If the line has a comment it will be put before the comment.
+put_at_end.put_comma = function()
+  f(",")
 end
 
 --- Puts '?' at the end of the current line
