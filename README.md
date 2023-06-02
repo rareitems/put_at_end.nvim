@@ -19,8 +19,8 @@ use { 'rareitems/put_at_end.nvim' }
   s("n", "<C-;>", m.put_semicolon)
   -- This keymap will put a semicolon at the end of the current line
 
-  s("n", "<C-,>", m.put_period) --This a period
-  s("n", "<C-.>", m.put_comma) --This a commna
+  s("n", "<C-.>", m.put_period) --This a period
+  s("n", "<C-,>", m.put_comma) --This a commna
   s("n", "<C-/>", m.put_questionmark) --This a question mark
   s("n", "<C-A>", function() m.put("STRING") end) --This 'STRING'
 ```
