@@ -1,9 +1,9 @@
-put_at_end.put({c})                                             *put_at_end.put*
-     Puts 'c' at the end of the current line
+put_at_end.put({str})                                           *put_at_end.put*
+     Puts 'str' at the end of the current line
      If the line has a comment it will be put before the comment.
 
     Parameters: ~
-        {c}  (string)
+        {str}  (string)
 
 
 put_at_end.put_semicolon()                            *put_at_end.put_semicolon*
