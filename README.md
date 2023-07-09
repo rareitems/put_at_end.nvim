@@ -3,7 +3,38 @@ Small Neovim plugin that provides keymaps for putting certain characters (or str
 
 Useful for languages that require semicolons at the end of the line.
 
-## Installation
+## Installation and Example Configuration
+- With [lazy](https://github.com/folke/lazy.nvim)
+
+```lua
+{
+  "rareitems/put_at_end",
+  keys = { -- Basic lazy loading
+    -- Plugin doesn't set any keymaps you have to set your own 
+    {
+      "<C-;>",
+      function()
+        require("put_at_end").put_semicolon()
+      end,
+      desc = "Put a semicolon at the end of the line",
+    },
+    {
+      "<C-.>",
+      function()
+        require("put_at_end").put_period()
+      end,
+      desc = "Put a period at the end of the line",
+    },
+    {
+      "<C-,>",
+      function()
+        require("put_at_end").put_comma()
+      end,
+      desc = "Put a comma at the end of the line",
+    },
+  },
+}
+```
 
 - With [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
