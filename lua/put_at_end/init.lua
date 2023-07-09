@@ -8,7 +8,7 @@ local function f(char, commentstring)
     local current_line = vim.api.nvim_get_current_line()
     local col = #current_line -- nvim_buf_set_text is 0-indexed
 
-    if commentstring == nil then
+    if #commentstring == 0 then
         vim.api.nvim_buf_set_text(0, row, col, row, col, { char })
         return
     end
