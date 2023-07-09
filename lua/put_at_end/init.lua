@@ -15,8 +15,8 @@ local function f(char, commentstring)
 
     local pattern = commentstring
         :gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "%%%1") -- espace all the magic lua characters
-        :gsub("%%s", "%%s%*", 1) -- add '*' after '%s' to handle no space case
-        :gsub("%s", "") -- remove all the spaces from the pattern
+        :gsub("%%s", "%%s%*", 1)                    -- add '*' after '%s' to handle no space case
+        :gsub("%s", "")                             -- remove all the spaces from the pattern
 
     local start, _ = string.find(current_line, pattern)
 
