@@ -2,7 +2,9 @@
 Small Neovim plugin that provides keymaps for putting certain characters (or strings) at the end of the current line (but before the comment if the line has one) without moving your cursor.
 
 Useful for languages that require semicolons at the end of the line.
+
 ## Usage
+
 ```lua
   local m = require("put_at_end")
   vim.keymap.set("n", "<C-;>", m.put_semicolon)
@@ -15,12 +17,14 @@ Useful for languages that require semicolons at the end of the line.
 ```
 
 ## Installation and Example Configuration
+
 - With [lazy](https://github.com/folke/lazy.nvim)
+
 ```lua
 {
-  "rareitems/put_at_end",
+  "rareitems/put_at_end.nvim",
   keys = { -- Basic lazy loading
-    -- Plugin doesn't set any keymaps you have to set your own 
+    -- Plugin doesn't set any keymaps you have to set your own
     {
       "<C-;>",
       function()
@@ -47,6 +51,7 @@ Useful for languages that require semicolons at the end of the line.
 ```
 
 - With [packer.nvim](https://github.com/wbthomason/packer.nvim)
+
 ```lua
 use { 'rareitems/put_at_end.nvim' }
 ```
